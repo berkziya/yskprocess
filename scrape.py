@@ -4,13 +4,13 @@ import os
 if not os.path.exists('pdfs'):
     os.makedirs('pdfs')
 
-base_url = 'https://www.ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/'
+base_url = 'https://www.ysk.gov.tr/doc/dosyalar/docs/14Mayis2023/KesinSecimSonuclari/'
 
 # Make a GET request to the base URL
 response = requests.get(base_url)
 
 # Find all the links to the PDF files on the page
-pdf_links = ['Adana','Adiyaman','Afyonkarahisar','Agri','Amasya','Ankara1','Ankara2','Ankara3','Antalya','Artvin','Aydin','Balikesir','Bilecik','Bingol','Bitlis','Bolu','Burdur','Bursa1','Bursa2','Canakkale','Cankiri','Corum','Denizli','Diyarbakir','Edirne','Elazig','Erzincan','Erzurum','Eskisehir','Gaziantep','Giresun','Gumushane','Hakkari','Hatay','isparta','Mersin','istanbul1','istanbul2','istanbul3','izmir1','izmir2','Kars','Kastamonu','Kayseri','Kirklareli','Kirsehir','Kocaeli','Konya','Kutahya','Malatya','Manisa','Kahramanmaras','Mardin','Mugla','Mus','Nevsehir','Nigde','Ordu','Rize','Sakarya','Samsun','Siirt','Sinop','Sivas','Tekirdag','Tokat','Trabzon','Tunceli','Sanliurfa','Usak','Van','Yozgat','Zonguldak','Aksaray','Bayburt','Karaman','Kirikkale','Batman','Sirnak','Bartin','Ardahan','igdir','Yalova','Karabuk','Kilis','Osmaniye','Duzce']
+pdf_links = ['ADANA','ADIYAMAN','AFYONKARAHISAR','AGRI','AMASYA','ANKARA-1','ANKARA-2','ANKARA-3','ANTALYA','ARTVIN','AYDIN','BALIKESIR','BILECIK','BINGOL','BITLIS','BOLU','BURDUR','BURSA-1','BURSA-2','CANAKKALE','CANKIRI','CORUM','DENIZLI','DIYARBAKIR','EDIRNE','ELAZIG','ERZINCAN','ERZURUM','ESKISEHIR','GAZIANTEP','GIRESUN','GUMUSHANE','HAKKARI','HATAY','ISPARTA','MERSIN','ISTANBUL-1','ISTANBUL-2','ISTANBUL-3','IZMIR-1','IZMIR-2','KARS','KASTAMONU','KAYSERI','KIRKLARELI','KIRSEHIR','KOCAELI','KONYA','KUTAHYA','MALATYA','MANISA','KAHRAMANMARAS','MARDIN','MUGLA','MUS','NEVSEHIR','NIGDE','ORDU','RIZE','SAKARYA','SAMSUN','SIIRT','SINOP','SIVAS','TEKIRDAG','TOKAT','TRABZON','TUNCELI','SANLIURFA','USAK','VAN','YOZGAT','ZONGULDAK','AKSARAY','BAYBURT','KARAMAN','KIRIKKALE','BATMAN','SIRNAK','BARTIN','ARDAHAN','IGDIR','YALOVA','KARABUK','KILIS','OSMANIYE','DUZCE']
 
 # Loop through the PDF links and download each file
 for link in pdf_links:
